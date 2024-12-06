@@ -41,7 +41,7 @@ end
 
 -- Toggle following state when "E" is pressed
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
-    if input.KeyCode == Enum.KeyCode.Q and not gameProcessed then
+    if input.KeyCode == Enum.KeyCode.E and not gameProcessed then
         following = not following
         if following then
             targetPlayer = getClosestPlayerToMouse()
